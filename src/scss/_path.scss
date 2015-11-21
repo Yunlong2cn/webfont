@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'WebFont';
+	src: url('#{$wf-font-path}.eot?v=#{$wf-version}');
+	src: url('#{$wf-font-path}.eot?#iefix&v=#{$wf-version}') format('embedded-opentype'),
+	url('#{$wf-font-path}.woff2?v=#{$wf-version}') format('woff2'),
+	url('#{$wf-font-path}.woff?v=#{$wf-version}') format('woff'),
+	url('#{$wf-font-path}.ttf?v=#{$wf-version}') format('truetype'),
+	url('#{$wf-font-path}.svg?v=#{$wf-version}#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

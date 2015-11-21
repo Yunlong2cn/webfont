@@ -1,0 +1,15 @@
+
+@mixin icon($icon: false, $position: 'before') {
+	&:#{$position} {
+		@if($icon) {
+			content: map-get($wf-icons, $icon);
+			@content;
+		}
+	}
+}
+
+@each $class, $icon in $wf-icons {
+	.#{$wf-css-prefix}-#{$class} {
+		@include icon($class);
+	}
+}
